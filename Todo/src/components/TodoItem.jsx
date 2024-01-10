@@ -18,7 +18,7 @@ function TodoItem({ TodoName, TodoDate, onDeleteItem }) {
         </button>
       </div>
       <div className="col-1">
-        <button type="button" class="btn btn-secondary" id="b3">
+        <button type="button" className="btn btn-secondary" id="b3">
           Update
         </button>
       </div>
