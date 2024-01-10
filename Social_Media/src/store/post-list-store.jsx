@@ -39,12 +39,14 @@ const PostListProvider = ({ children }) => {
   };
 
   const deletePost = (postId) => {
-    dispatchPostList({
-      type: "DELETE_POST",
-      payload: {
-        postId,
-      },
-    });
+    if (window.confirm("Are You Sure ?...")) {
+      dispatchPostList({
+        type: "DELETE_POST",
+        payload: {
+          postId,
+        },
+      });
+    }
   };
 
   return (
